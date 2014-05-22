@@ -46,5 +46,6 @@ gem 'capistrano', '~> 3.2.0'
 gem 'capistrano-unicorn', :require => false, :group => :development
 
 gem 'capistrano-bundler'
+gem 'capistrano-rvm'
 
 gem 'rvm1-capistrano3', :require => false

@@ -36,6 +36,9 @@ GEM
     capistrano-bundler (1.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-rvm (0.1.1)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     capistrano-unicorn (0.1.10)
       capistrano
     coffee-rails (4.0.1)
@@ -144,6 +147,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano (~> 3.2.0)
   capistrano-bundler
+  capistrano-rvm
   capistrano-unicorn
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)

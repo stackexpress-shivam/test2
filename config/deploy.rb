@@ -1,6 +1,10 @@
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
+
+require "bundler/capistrano"
+require "rvm/capistrano" 
+
 set :application, 'test2'
 #set :repo_url, 'git@github.com:stackexpress-shivam/test2.git'
 set :repo_url, 'https://github.com/stackexpress-shivam/test2.git'
@@ -19,6 +23,7 @@ set :user, 'deploy'
 set :use_sudo, false
 set :deploy_to, "/home/deploy/apps/testapp1/"
 set :app_path, "/home/deploy/apps/testapp1/current"
+
 
 #set :deploy_via, :copy
 #set :deploy_via, :remote_cache
