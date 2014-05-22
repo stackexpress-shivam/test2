@@ -43,7 +43,7 @@ gem 'mysql2'
 
 gem 'capistrano', '~> 3.2.0'
 
-gem 'capistrano-unicorn', :require => false, group: :development
+gem 'capistrano-unicorn', :require => false, :group => :development
 
 gem 'capistrano-bundler'
 
