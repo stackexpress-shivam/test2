@@ -1,6 +1,6 @@
 
 app server
-===========================
+===========
 
 gem install unicorn
 
@@ -44,7 +44,7 @@ $ rvm rubygems current
 
 gem install bundler
 
-Finally, at some point, chances are that you’re going to install some gem requiring Nokogiri which requires additional packages, so let’s install those packages beforehand:
+Finally, at some point, chances are that youï¿½re going to install some gem requiring Nokogiri which requires additional packages, so letï¿½s install those packages beforehand:
 
 sudo apt-get install libxslt-dev libxml2-dev
 
