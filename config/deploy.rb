@@ -2,8 +2,6 @@
 lock '3.2.1'
 
 
-require "bundler/capistrano"
-require "rvm/capistrano" 
 
 set :application, 'test2'
 #set :repo_url, 'git@github.com:stackexpress-shivam/test2.git'
