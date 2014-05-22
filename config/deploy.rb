@@ -2,7 +2,8 @@
 lock '3.2.1'
 
 set :application, 'test2'
-set :repo_url, 'git@github.com:stackexpress-shivam/test2.git'
+#set :repo_url, 'git@github.com:stackexpress-shivam/test2.git'
+set :repo_url, 'https://github.com/stackexpress-shivam/test2.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
@@ -19,12 +20,15 @@ set :use_sudo, false
 set :deploy_to, "/home/deploy/apps/testapp1/"
 set :app_path, "/home/deploy/apps/testapp1/current"
 
+#set :deploy_via, :copy
+#set :deploy_via, :remote_cache
+
 set :stages, ["staging", "production"]
 set :default_stage, "production"
 
 role :web, "192.168.33.10"                          # Your HTTP server, Apache/etc
 role :app, "192.168.33.10"                          # This may be the same as your `Web` server
-role :db,  "192.168.33.11", :primary => true
+#role :db,  "192.168.33.11", :primary => true
 
 
 # Default value for :format is :pretty

@@ -19,6 +19,7 @@
 
 
 server '192.168.33.10', user: 'deploy', roles: %w{app}
+#server '192.168.33.11', user: 'deploy', roles: %w{db}
 
 #server "192.168.33.10", :app, :primary => true
 #server "192.168.33.11", :db, :primary => true
