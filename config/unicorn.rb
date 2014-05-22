@@ -1,4 +1,6 @@
 root = "/home/deploy/apps/testapp1/current"
+preload_app true
+user 'deploy'
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
@@ -13,3 +15,7 @@ timeout 30
 before_exec do |_|
   ENV["BUNDLE_GEMFILE"] = File.join(root, 'Gemfile')
 end
+
+
+preload_app true
+user 'deploy'

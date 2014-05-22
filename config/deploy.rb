@@ -22,7 +22,7 @@ set :use_sudo, false
 set :deploy_to, "/home/deploy/apps/testapp1/"
 set :app_path, "/home/deploy/apps/testapp1/current"
 
-
+set :rails_env, "production"
 #set :deploy_via, :copy
 #set :deploy_via, :remote_cache
 
