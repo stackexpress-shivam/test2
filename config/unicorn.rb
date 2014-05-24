@@ -16,6 +16,3 @@ before_exec do |_|
   ENV["BUNDLE_GEMFILE"] = File.join(root, 'Gemfile')
 end
 
-
-preload_app true
-user 'deploy'
