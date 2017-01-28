@@ -66,3 +66,5 @@ $ sudo nano /etc/nginx/nginx.conf
 sudo mkdir /home/deploy/apps/testapp1/current
 sudo chown deploy:deploy /home/deploy/apps/testapp1/current
 
+** Test comments **
+test build
